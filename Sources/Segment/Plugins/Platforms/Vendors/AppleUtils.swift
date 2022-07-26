@@ -208,17 +208,17 @@ internal class MacOSVendorSystem: VendorSystem {
     }
     
     override var model: String {
-        return deviceModel()
+        return "Apple Device"
     }
     
     override var name: String {
-        return device.hostName
+        return "Apple Host"
     }
     
     override var identifierForVendor: String? {
         // apple suggested to use this for receipt validation
         // in MAS, works for this too.
-        return macAddress(bsd: "en0")
+        return "Apple User"
     }
     
     override var systemName: String {
